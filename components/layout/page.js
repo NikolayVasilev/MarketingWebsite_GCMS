@@ -61,6 +61,7 @@ export default function PageLayout({ children, page }) {
       )}
 
       <div>
+        {page?.children}
         {children}
         {pageNewsletter && <Marketing.NewsletterSignup {...pageNewsletter} />}
       </div>
